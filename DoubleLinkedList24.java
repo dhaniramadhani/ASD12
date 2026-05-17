@@ -81,4 +81,41 @@ public void printReverse() {
         }
     }
 }
+public void removeFirst() {
+    if (isEmpty()) {
+        System.out.println("Linked List kosong");
+    } else if (head == tail) {
+
+        System.out.println("Data yang dihapus:");
+        head.data.tampil();
+
+        head = tail = null;
+    } else {
+
+        System.out.println("Data yang dihapus:");
+        head.data.tampil();
+
+        head = head.next;
+        head.prev = null;
+    }
+}
+
+public void removeLast() {
+    if (isEmpty()) {
+        System.out.println("Linked List kosong");
+    } else if (head == tail) {
+
+        System.out.println("Data yang dihapus:");
+        tail.data.tampil();
+
+        head = tail = null;
+    } else {
+
+        System.out.println("Data yang dihapus:");
+        tail.data.tampil();
+
+        tail = tail.prev;
+        tail.next = null;
+    }
+}
 }

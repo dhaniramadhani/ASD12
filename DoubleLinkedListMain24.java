@@ -31,6 +31,8 @@ public class DoubleLinkedListMain24 {
             System.out.println("3. Insert After");
             System.out.println("4. Print");
             System.out.println("5. Print Reverse");
+            System.out.println("6. Remove First");
+            System.out.println("7. Remove Last");
             System.out.println("0. Keluar");
 
             System.out.print("Pilih menu: ");
@@ -60,6 +62,14 @@ public class DoubleLinkedListMain24 {
 
                 case 5:
                     dll.printReverse();
+                    break;
+                    
+                case 6:
+                    dll.removeFirst();
+                    break;
+
+                case 7:
+                    dll.removeLast();
                     break;
 
                 case 0:
